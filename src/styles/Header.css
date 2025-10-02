@@ -65,36 +65,62 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
-    background-color: rgba(30, 58, 138, 0.95);
+    height: 50%;
+    background: rgba(30, 58, 138, 0.95);
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    align-items: top;
-    /* justify-content: center; */
+    /* align-items: right;
+    justify-content: right;  */
     z-index: 1000;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
 }
 
-.overlay-menu .overlay-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+/* Animation class */
+.overlay-menu.slide-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.overlay-menu .overlay-links li {
-    margin: 1rem 0;
+/* Links fade-in */
+.overlay-links li {
+    margin: 1.5rem 0;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
 }
 
-.overlay-menu .overlay-links li a {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
+.overlay-links li:nth-child(1) {
+    animation-delay: 0.1s;
 }
 
-.overlay-menu .overlay-links li a:hover {
-    color: #facc15;
-    /* yellow highlight */
+.overlay-links li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.overlay-links li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.overlay-links li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.overlay-links li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Close button */
@@ -102,16 +128,39 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+    transition: transform 0.3s;
 }
+
+.close-btn:hover {
+    transform: rotate(90deg);
+    color: #facc15;
+    /* yellow on hover */
+}
+
+/* Links styling */
+.overlay-links li a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.overlay-links li a:hover {
+    color: #facc15;
+    transform: scale(1.05);
+}
+
 
 /* Navigation menu - hidden by default */
 .nav {
     display: none;
+    
 }
 
 .nav.open {
@@ -131,11 +180,8 @@
     text-decoration: none;
     position: relative;
     font-size: 1.2rem;
+    /* visible by default; media query adjusts layout for desktop */
 }
-/* .nav-links li a {
-    color: white;
-    text-decoration: none;
-} */
 
 .nav-links li a:hover {
     text-decoration: underline;
