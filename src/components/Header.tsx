@@ -8,6 +8,7 @@ import { Star } from 'lucide-react';
 import { Contact } from 'lucide-react';
 import { CircleUserRound } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
+import { LogIn } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const Header: React.FC = () => {
           <ul className="nav-links">
             <li><Link to="/"> <House /> Home</Link></li>
             <li><Link to="/reviews"> <Star />Customer Reviews</Link></li>
-            <li><Link to="/contact">  <Contact /> Contact</Link></li>
+            <li><Link to="/contact">  <LogIn /> Login</Link></li>
             <li><Link to="/account"> <CircleUserRound />My Account</Link></li>
             <li><Link to="/cart"> <ShoppingCart /> Cart ({cartItems.length})</Link></li>
           </ul>
@@ -45,10 +46,15 @@ const Header: React.FC = () => {
         {isOpen && (
           <div className={`overlay-menu ${isOpen ? 'slide-in' : ''}`}>
             <button className="close-btn" onClick={closeMenu}>&times;</button>
+            {/* Logo + Brand Name */}
+            <div className="logo-container">
+                <img src="./logo2.png" alt="Bucci Collections Logo" className="logo-image" />
+                <h1 className="logo">Bucci Collections</h1>
+            </div>
             <ul className="overlay-links">
               <li><Link to="/" onClick={closeMenu}> <House /> Home</Link></li>
               <li><Link to="/reviews" onClick={closeMenu}> <Star /> Customer Reviews</Link></li>
-              <li><Link to="/contact" onClick={closeMenu}> <Contact /> Contact</Link></li>
+              <li><Link to="/contact" onClick={closeMenu}> <LogIn /> Login </Link></li>
               <li><Link to="/account" onClick={closeMenu}> <CircleUserRound /> My Account</Link></li>
               <li><Link to="/cart" onClick={closeMenu}> <ShoppingCart /> Cart ({cartItems.length})</Link></li>
             </ul>

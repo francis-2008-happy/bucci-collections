@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Martha Johnson",
+        "product": "Leather Shoes",
+        "rating": 5,
+        "comment": "Absolutely love these shoes! Very comfortable and stylish.",
+        "image": "./testimony1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tunde Ade",
+        "product": "Denim Jacket",
+        "rating": 4,
+        "comment": "Great quality jacket. Fits perfectly!",
+        "image": "./testimony2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Chioma Eze",
+        "product": "Sneakers",
+        "rating": 5,
+        "comment": "The sneakers are amazing. Fast delivery too.",
+        "image": "./testimony3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Emeka Okafor",
+        "product": "Handbag",
+        "rating": 5,
+        "comment": "Beautiful handbag! Looks exactly like the photos.",
+        "image": "./testimony4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ngozi Umeh",
+        "product": "T-Shirt",
+        "rating": 4,
+        "comment": "Nice fabric and fit, will order more colors.",
+        "image": "./testimony5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "David Obi",
+        "product": "Sunglasses",
+        "rating": 5,
+        "comment": "Stylish and lightweight sunglasses. Highly recommend.",
+        "image": "./testimony6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Aisha Bello",
+        "product": "Watch",
+        "rating": 5,
+        "comment": "The watch is elegant and precise. Love it!",
+        "image": "./testimony4.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Samuel Adenuga",
+        "product": "Boots",
+        "rating": 4,
+        "comment": "Durable boots, comfortable for long walks.",
+        "image": "./testimony1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Funke Adeyemi",
+        "product": "Dress",
+        "rating": 5,
+        "comment": "Amazing quality dress. Perfect fit and color.",
+        "image": "./testimony5.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Chinedu Okeke",
+        "product": "Cap",
+        "rating": 4,
+        "comment": "Good cap, fits well, nice design.",
+        "image": "./testimony2.jpg"
+    }
+]
