@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Sneakers",
+        "price": 79.99,
+        "image": "./image1.jpeg",
+        "description": "Comfortable running sneakers."
+    },
+    {
+        "id": 2,
+        "name": "T-Shirt",
+        "price": 25.99,
+        "image": "./image2.webp",
+        "description": "Casual cotton t-shirt."
+    },
+    {
+        "id": 3,
+        "name": "Jeans",
+        "price": 49.99,
+        "image": "./image3.avif",
+        "description": "Stylish denim jeans."
+    },
+    {
+        "id": 4,
+        "name": "Backpack",
+        "price": 59.99,
+        "image": "./image4.jpg",
+        "description": "Durable everyday backpack."
+    },
+    {
+        "id": 5,
+        "name": "Sports Sneakers",
+        "price": 120.99,
+        "image": "./image5.jpg",
+        "description": "Sport running sneakers."
+    },
+    {
+        "id": 6,
+        "name": "T-Shirt",
+        "price": 28.99,
+        "image": "./image6.webp",
+        "description": "Cotton t-shirt."
+    },
+    {
+        "id": 7,
+        "name": "Jeans",
+        "price": 24.99,
+        "image": "./image7.webp",
+        "description": "Unisex denim jeans."
+    },
+    {
+        "id": 8,
+        "name": "Backpack",
+        "price": 23.99,
+        "image": "./image8.jpeg",
+        "description": "Durable Laptot bag."
+    },
+        {
+            "id": 1,
+            "name": "Sneakers",
+            "price": 79.99,
+            "image": "./image1.jpeg",
+            "description": "Comfortable running sneakers."
+        },
+        {
+            "id": 2,
+            "name": "T-Shirt",
+            "price": 25.99,
+            "image": "./image2.webp",
+            "description": "Casual cotton t-shirt."
+        },
+        {
+            "id": 3,
+            "name": "Jeans",
+            "price": 49.99,
+            "image": "./image3.avif",
+            "description": "Stylish denim jeans."
+        },
+        {
+            "id": 4,
+            "name": "Backpack",
+            "price": 59.99,
+            "image": "./image4.jpg",
+            "description": "Durable everyday backpack."
+        },
+        {
+            "id": 5,
+            "name": "Sports Sneakers",
+            "price": 120.99,
+            "image": "./image5.jpg",
+            "description": "Sport running sneakers."
+        },
+        {
+            "id": 6,
+            "name": "T-Shirt",
+            "price": 28.99,
+            "image": "./image6.webp",
+            "description": "Cotton t-shirt."
+        },
+        {
+            "id": 7,
+            "name": "Jeans",
+            "price": 24.99,
+            "image": "./image7.webp",
+            "description": "Unisex denim jeans."
+        },
+        {
+            "id": 8,
+            "name": "Backpack",
+            "price": 23.99,
+            "image": "./image8.jpeg",
+            "description": "Durable Laptot bag."
+        }
+]

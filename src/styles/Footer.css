@@ -1,0 +1,18 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+    .footer {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
