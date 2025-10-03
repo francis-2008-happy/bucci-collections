@@ -35,8 +35,8 @@ const Header: React.FC = () => {
         <nav className="nav desktop-nav">
           <ul className="nav-links">
             <li><Link to="/"> <House /> Home</Link></li>
-            <li><Link to="/reviews"> <Star />Customer Reviews</Link></li>
-            <li><Link to="/contact">  <LogIn /> Login</Link></li>
+            <li><Link to="/reviews"> <Star /> Customer Reviews</Link></li>
+            <li><Link to="/login">  <LogIn /> Login</Link></li>
             <li><Link to="/account"> <CircleUserRound />My Account</Link></li>
             <li><Link to="/cart"> <ShoppingCart /> Cart ({cartItems.length})</Link></li>
           </ul>
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             <ul className="overlay-links">
               <li><Link to="/" onClick={closeMenu}> <House /> Home</Link></li>
               <li><Link to="/reviews" onClick={closeMenu}> <Star /> Customer Reviews</Link></li>
-              <li><Link to="/contact" onClick={closeMenu}> <LogIn /> Login </Link></li>
+              <li><Link to="/login" onClick={closeMenu}> <LogIn /> Login </Link></li>
               <li><Link to="/account" onClick={closeMenu}> <CircleUserRound /> My Account</Link></li>
               <li><Link to="/cart" onClick={closeMenu}> <ShoppingCart /> Cart ({cartItems.length})</Link></li>
             </ul>
@@ -66,24 +66,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

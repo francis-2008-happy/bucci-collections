@@ -8,9 +8,11 @@ import Reviews from './pages/Reviews';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Account from './pages/Account';
+import { AuthProvider } from "./context/AuthContext";
 
 const App: React.FC = () => {
   return (
+    <AuthProvider>
     <Router>
       <Header />
       <Routes>
@@ -22,6 +24,7 @@ const App: React.FC = () => {
       </Routes>
       <Footer />
     </Router>
+    </AuthProvider>
   );
 };
 

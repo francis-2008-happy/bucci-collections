@@ -1,12 +1,27 @@
-// src/pages/Account.tsx
-import React from 'react';
-import '../styles/Account.css';
+import React from "react";
+import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Account: React.FC = () => {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  if (!user) {
+    return (
+      <div className="account-container">
+        <h2>You are not logged in.</h2>
+        <button onClick={() => navigate("/login")}>Go to Login</button>
+      </div>
+    );
+  }
+
   return (
-    <div className="page-container">
-      <h2>My Account</h2>
-      <p>User account details will appear here.</p>
+    <div className="account-container">
+      <h2>Welcome, {user.name}!</h2>
+      <p>Email: {user.email}</p>
+      <button onClick={() => { logout(); navigate("/"); }}>
+        Logout
+      </button>
     </div>
   );
 };
